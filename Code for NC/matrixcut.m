@@ -15,7 +15,7 @@ end
 
 %sort in a decreasing trend
 for i = 1:len-1
-    for j = i+1 : len
+    for j = 1 : 1: len-i
         if connectivity_matrix(2,j) > connectivity_matrix(2,j-1) %change
             temp = connectivity_matrix(:,j-1);
             connectivity_matrix(:,j-1) = connectivity_matrix(:,j);
